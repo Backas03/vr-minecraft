@@ -22,6 +22,7 @@
 | `oak_planks.png` | 판자 블록 |
 | `oak_leaves.png` | 나뭇잎 블록 |
 | `glass.png` | 유리 블록 |
+| `basalt.png` | 기반암 블록 (맵 바닥, 파괴 불가) |
 
 ---
 
@@ -90,3 +91,13 @@
 | 파일 | 사용처 |
 |---|---|
 | `Galmuri11.ttf` | 손목 위젯의 블록 개수, 목표 진행도, 클리어 시간 |
+
+---
+
+## 6. 맵 제작 도구
+
+**MagicaVoxel** — https://ephtracy.github.io/
+
+| 파일 | 사용처 |
+|---|---|
+| `Assets/Maps/stage.vox` (직접 제작) | 게임 맵 전체 (숲·협곡·고원 세 구역) |
