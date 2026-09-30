@@ -6,23 +6,23 @@
 
 ## 1. 블록 텍스처
 
-**16x16 Block Texture Set** — https://opengameart.org/content/16x16-block-texture-set
+**Minetest Game 기본 텍스처** — https://github.com/luanti-org/minetest_game/tree/master/mods/default/textures
 
 | 파일 | 사용처 |
 |---|---|
-| `grass_top.png` | 풀 블록 윗면 |
-| `grass_side.png` | 풀 블록 옆면 |
-| `dirt.png` | 흙 블록, 풀 블록 아랫면 |
-| `stone_generic.png` | 돌 블록 |
-| `cobblestone.png` | 조약돌 블록 (돌을 부수면 획득) |
-| `sand_ugly.png` | 모래 블록 |
-| `gravel.png` | 자갈 블록 |
-| `oak_log_top.png` | 통나무 윗면·아랫면 |
-| `oak_log_side.png` | 통나무 옆면 |
-| `oak_planks.png` | 판자 블록 |
-| `oak_leaves.png` | 나뭇잎 블록 |
-| `glass.png` | 유리 블록 |
-| `basalt.png` | 기반암 블록 (맵 바닥, 파괴 불가) |
+| `default_grass.png` | 풀 블록 윗면 |
+| `vrm_grass_side.png` | 풀 블록 옆면 (`default_dirt.png`에 `default_grass_side.png`를 합성) |
+| `default_dirt.png` | 흙 블록, 풀 블록 아랫면 |
+| `default_stone.png` | 돌 블록 |
+| `default_cobble.png` | 조약돌 블록 (돌을 부수면 획득) |
+| `default_sand.png` | 모래 블록 |
+| `default_gravel.png` | 자갈 블록 |
+| `default_tree_top.png` | 통나무 윗면·아랫면 |
+| `default_tree.png` | 통나무 옆면 |
+| `default_wood.png` | 판자 블록 |
+| `default_leaves.png` | 나뭇잎 블록 |
+| `default_glass.png` | 유리 블록 |
+| `default_obsidian.png` | 기반암 블록 (맵 바닥, 파괴 불가) |
 
 ---
 

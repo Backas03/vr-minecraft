@@ -196,7 +196,7 @@
 
 ### 7.1 마인크래프트 원본 리소스는 쓰지 않는다
 
-텍스처·사운드 모두 Mojang 저작물이다. 리소스팩도 대부분 CC-BY-SA로 배포 조건이 붙는다. **CC0 에셋과 엔진 내장 에셋만** 쓴다. 폰트만 OFL이다.
+텍스처·사운드 모두 Mojang 저작물이고, 마인크래프트 리소스팩도 원본 게임에 종속된다. 대신 **공개 레포에 재배포할 수 있는 라이선스만** 쓴다. 블록 텍스처는 Minetest Game의 CC BY-SA 3.0, 사운드는 CC0, 폰트는 OFL 1.1이다. 작가와 라이선스는 11절 크레딧에 적는다.
 
 ### 7.2 2단계 에셋 전략
 
@@ -215,7 +215,7 @@
 
 | 종류 | 내용 | 확보 방법 |
 |---|---|---|
-| 블록 텍스처 | 256×256 아틀라스, 16px 타일 13종 (풀·흙·돌·조약돌·모래·자갈·통나무·판자·잎·유리·기반암) | OpenGameArt **16x16 Block Texture Set** (CC0) |
+| 블록 텍스처 | 256×256 아틀라스, 16px 타일 13종 (풀·흙·돌·조약돌·모래·자갈·통나무·판자·잎·유리·기반암) | **Minetest Game** 기본 텍스처 (CC BY-SA 3.0, 일부 CC0) |
 | 맵 | 96×96×48 고정 맵 1개 | **MagicaVoxel**로 직접 제작 (`.vox`) |
 | 손 메시 | 좌우 손 + 손가락 애니메이션 | **UE5 VR 템플릿의 MannequinsXR** 중 손 메시만 (엔진 내장) |
 | 사운드 | 파괴 4종·설치·발소리 3종·핫바 전환·설치 불가·클리어 징글·배경음 2종 | Kenney Impact / Interface Sounds, Music Jingles, OpenGameArt 배경음 (모두 **CC0**) |
@@ -286,3 +286,54 @@ AVRPawn
 핫바 데이터는 `UHotbarComponent` 한 곳에만 존재하고, 손 위 블록과 손목 위젯이 델리게이트를 구독해 따라간다. 청사진 판정은 `UObjectiveComponent`가 월드의 블록 변경 이벤트를 받아 처리한다.
 
 상세 설계는 [docs/design.md](docs/design.md), 에셋은 [docs/assets.md](docs/assets.md), 일정과 리스크는 [docs/plan.md](docs/plan.md) 참고.
+
+---
+
+## 11. 크레딧
+
+외부 에셋의 작가와 라이선스. 파일별 사용처와 링크는 [ASSETS.md](ASSETS.md).
+
+### 블록 텍스처 — Minetest Game
+
+출처 [luanti-org/minetest_game](https://github.com/luanti-org/minetest_game) `mods/default/textures`. 라이선스 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), 일부 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). 라이선스 원문은 `Assets/Textures/Blocks/LICENSE-minetest_game.txt`.
+
+| 파일 | 작가 | 라이선스 |
+|---|---|---|
+| `default_grass.png` | TumeniNodes | CC BY-SA 3.0 |
+| `default_grass_side.png` | paramat (TumeniNodes의 텍스처 기반) | CC BY-SA 3.0 |
+| `default_dirt.png` | random-geek (Neuromancer의 텍스처 기반) | CC BY-SA 3.0 |
+| `default_stone.png`, `default_tree.png`, `default_tree_top.png`, `default_leaves.png` | Cisoun | CC BY-SA 3.0 |
+| `default_cobble.png` | Neuromancer (Brane praefect의 텍스처 기반) | CC BY-SA 3.0 |
+| `default_sand.png` | VanessaE | CC BY-SA 3.0 |
+| `default_wood.png` | BlockMen | CC BY-SA 3.0 |
+| `default_obsidian.png` | jojoa1997 | CC BY-SA 3.0 |
+| `default_gravel.png` | sofar (Gambit의 PixelBOX 텍스처 기반) | CC0 1.0 |
+| `default_glass.png` | Krock | CC0 1.0 |
+
+**변경 사항:** `vrm_grass_side.png`는 `default_dirt.png` 위에 `default_grass_side.png`를 합성한 파일이다. 이 파일과, 위 텍스처를 모아 만드는 블록 아틀라스는 CC BY-SA 3.0으로 배포한다.
+
+### 사운드
+
+| 에셋 | 작가 | 라이선스 |
+|---|---|---|
+| Impact Sounds, Interface Sounds, Music Jingles | [Kenney](https://kenney.nl) | CC0 1.0 |
+| Birds and Wind – Ambient | Spring Spring (새소리: isaiah658, syncopika, pauliuw) | CC0 1.0 |
+| Wind Whoosh Loop | SketchMan3 | CC0 1.0 |
+
+### 폰트
+
+| 에셋 | 작가 | 라이선스 |
+|---|---|---|
+| Galmuri | Lee Minseo (quiple) | SIL OFL 1.1 — `Assets/Fonts/Galmuri/LICENSE.txt` |
+
+### 손 메시
+
+| 에셋 | 작가 | 라이선스 |
+|---|---|---|
+| MannequinsXR (Unreal Engine VR Template) | Epic Games | Unreal Engine EULA (Examples) |
+
+### 도구
+
+| 도구 | 작가 | 용도 |
+|---|---|---|
+| [MagicaVoxel](https://ephtracy.github.io/) | ephtracy | 맵 제작 |
