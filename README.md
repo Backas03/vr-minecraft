@@ -295,7 +295,7 @@ AVRPawn
 
 ### 블록 텍스처 — Minetest Game
 
-출처 [luanti-org/minetest_game](https://github.com/luanti-org/minetest_game) `mods/default/textures`. 라이선스 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), 일부 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). 라이선스 원문은 `Assets/Textures/Blocks/LICENSE-minetest_game.txt`.
+출처 [luanti-org/minetest_game](https://github.com/luanti-org/minetest_game) `mods/default/textures`. 라이선스 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), 일부 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). 라이선스 원문은 `Assets/Textures/Blocks/LICENSE-minetest_game.txt`. 원본 레포는 루트의 `minetest_game/` 서브모듈(커밋 `c42e4d0`)로 연결돼 있다. 클론할 때 `git clone --recursive`로 받으면 서브모듈도 함께 받는다.
 
 | 파일 | 작가 | 라이선스 |
 |---|---|---|
