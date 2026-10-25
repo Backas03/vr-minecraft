@@ -94,10 +94,6 @@
 
 ---
 
-## 6. 맵 제작 도구
+## 6. 맵
 
-**MagicaVoxel** — https://ephtracy.github.io/
-
-| 파일 | 사용처 |
-|---|---|
-| `Assets/Maps/stage.vox` (직접 제작) | 게임 맵 전체 (숲·협곡·고원 세 구역) |
+맵은 외부 에셋 없이 `BP_VoxelWorld` 블루프린트가 엔진 기본 큐브(`/Engine/BasicShapes/Cube`)와 위 블록 텍스처로 직접 쌓는다.
